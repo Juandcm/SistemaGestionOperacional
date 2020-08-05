@@ -19,6 +19,8 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 ## Pasos para utilizar el sistema
 1) Ir a la carpeta /bd e importar la bd sgo.sql a mysql con el mismo nombre
 
+1.5) Crear un archivo .env y copiar el contenido del archivo "env" en el archivo .env creado
+
 2) Abrir el archivo .env y modificar la variable app.baseURL de acuerdo a la dirección donde estara el sistema alojado el sistema y la variable urlsemifull modificar los datos de acuerdo a la variable app.baseURL.
 
 3) Si deseas modificar el tiempo de duracion de la session de Codeigniter 4 modifica la variable app.sessionExpiration de acuerdo al tiempo que deseas modificar, tomando en cuenta que el tiempo esta en base a los segundos.

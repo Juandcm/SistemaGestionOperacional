@@ -14,21 +14,29 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
-# CI_ENVIRONMENT = production
+##Desactivar esto para colocar en produccion
+#CI_ENVIRONMENT = production
+CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
 #--------------------------------------------------------------------
+app.baseURL = 'http://localhost/SGO/sistema/public'
+urlsemifull = '/SGO/sistema/public/'
+app.appTimezone = 'America/Caracas'
+app.defaultLocale = 'es'
 
-# app.baseURL = ''
 # app.forceGlobalSecureRequests = false
 
 # app.sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler'
 # app.sessionCookieName = 'ci_session'
 # app.sessionSavePath = NULL
 # app.sessionMatchIP = false
-# app.sessionTimeToUpdate = 300
 # app.sessionRegenerateDestroy = false
+
+# Esto es para establecer el limite de duracion de la session en segundos
+app.sessionExpiration = 7200 #2horas
+app.sessionTimeToUpdate = 300 #5minutos
 
 # app.cookiePrefix = ''
 # app.cookieDomain = ''
@@ -49,11 +57,11 @@
 # DATABASE
 #--------------------------------------------------------------------
 
-# database.default.hostname = localhost
-# database.default.database = ci4
-# database.default.username = root
-# database.default.password = root
-# database.default.DBDriver = MySQLi
+database.default.hostname = localhost
+database.default.database = sgo
+database.default.username = root
+database.default.password = 
+database.default.DBDriver = MySQLi
 
 # database.tests.hostname = localhost
 # database.tests.database = ci4
